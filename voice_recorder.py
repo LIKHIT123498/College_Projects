@@ -21,8 +21,8 @@ def play():
         print(f"Error during playback: {e}")
 app = Tk()
 app.title('GUI Voice Recorder')
-photo = PhotoImage(file=r'C:\\Users\\Likhit\\PythonPros\\voicerecorder.png')
-button1=Button(app,text=' Record ',font=('Ink Free',50,"bold"),command=record,image=photo)
+
+button1=Button(app,text=' Record ',font=('Ink Free',50,"bold"),command=record)
 button1.config(bg='red',fg='white',activebackground='white',activeforeground='red',compound='top')
 button1.pack()
 button2=Button(app,text='   play   ',font=('Ink Free',50,"bold"),command=play)
