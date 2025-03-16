@@ -28,7 +28,7 @@ if __name__ == "_main_":
 targethour = 00   # 12 AM in 24-hour format
 targetminute = 37
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     while True:
         # Get the current time
         current_time = datetime.now()
