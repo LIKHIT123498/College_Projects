@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Contact Details</title>
+    <script type="application/javascript">
+        function checkdata(){
+            //Create references to the input elements we wish to validate
+            var username = document.getElementById("name");
+            var email_address = document.getElementById("email");
+            //Check if username field is empty
+            if(username.value == ""){
+                    alert("Please enter the name");
+                    username.focus();
+                    return false;
+            }
+            //Check if email field is empty
+            if(email_address.value == ""){
+                    alert("Please enter the email");
+                    email_address.focus();
+                    return false;
+            }
+            //If all is well return true.
+            return true;
+        }
+    </script>
+    </head>
+    <body>
+        <h2>Enter your contact details:</h2> <br>
+        <form id="form1" onsubmit="return checkdata()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
